@@ -1,46 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promise CV</title>
-<link rel="stylesheet" href="style.css">
-
-</head>
-<body>
-<h1 id="heading">Curriculum Vitae of:</h1>
-<h2 id="name">Promise Kamanga</h2>
-
-<h2 id="sub1"> Profile</h2>
-<p>Name: Promise Kamanga <br> Age: 30 <br> Profession: Full Stack Developer <br> Email: promise1kamanga@gmail.com <br>Phone: 0813057489 <br>Location: Johannesburg, South Africa</p>
-
-<h2 id="sub2"> Professional Summary </h2>
-<p>Motivated Full Stack Developer with 1 year of hands-on experience building and maintaining web applications. Skilled in both front-end and back-end development, with a strong focus on writing clean code and creating user-friendly applications. Eager to grow and contribute to innovative development teams.</p>
-
-<h2 id="sub3"> Technical Skills </h2>
-<ul>
-    <li>Back-End: Node.js, Express.js</li>
-    <li> Front-End: HTML, CSS, JavaScript React</li><li>Databases: MongoDB, MySQL</li><li>Tools & Technologies: Git, GitHub, REST APIs</li><li>Other: Responsive Design, Debugging, Problem Solving</li>
-</ul>
-<h2 id="sub4">Work Experience</h2>
-<p>Junior Full Stack Developer <br>ABC Tech Solutions, Johannesburg <br> 2025 to Present</p>
-<ul>
-    <li>Developed and maintained web applications using React and Node.js</li><li>Built RESTful APIs for seamless front-end and back-end communication</li>
-    <li>Fixed bugs and improved application performance</li> <li>Collaborated with team members to deliver projects on time</li>
-</ul>
-<h2 id="sub5">Education</h2>
-<p>Diploma/Degree in Information Technology or Computer Science <br> (Shaper)</p>
-
-<h2 id="sub6">Soft Skills</h2>
-<ul>
-    <li>Team Work</li> <li>Communication</li><li>Time Management</li><li>Adaptability</li>
-</ul>
-    
-<h2 id="sub7"> References </h2>
-<p>Available on Request</p>
-
-</body>
-</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,16 +10,14 @@
     <div class="cv-container">
         <aside class="sidebar">
             <div class="profile-picture">
-      <img src="Snapchat-1033394844.jpg" alt="Promise Kamanga Profile Picture">
-
+                <img src="Snapchat-1033394844.jpg" alt="Promise Kamanga Profile Picture">
             </div>
             
             <section class="contact-info">
                 <h2>Contact</h2>
-                <p><strong>Email:</strong><br>promise1kamanga@gmail.com</p>
+                <p><strong>Email:</strong><br><a href="mailto:promise1kamanga@gmail.com">promise1kamanga@gmail.com</a></p>
                 <p><strong>Phone:</strong><br>0813057489</p>
                 <p><strong>Location:</strong><br>Johannesburg, SA</p>
-
             </section>
 
             <section class="soft-skills">
@@ -74,6 +29,7 @@
                     <li>Adaptability</li>
                 </ul>
             </section>
+
             <section class="links">
                 <h2>Links</h2>
                 <p>
@@ -82,55 +38,68 @@
                 </p>
             </section>
         </aside>
-        </aside>
 
-        <!-- Right Main Content -->
         <main class="main-content">
             <header>
                 <h1>Promise Kamanga</h1>
                 <h3>Full Stack Developer</h3>
             </header>
 
-            <section>
+        
+            <section class="summary-section">
                 <h2>Professional Summary</h2>
                 <p>Motivated Full Stack Developer with 1 year of hands-on experience building and maintaining web applications. Skilled in both front-end and back-end development, with a strong focus on writing clean code and creating user-friendly applications.</p>
             </section>
 
-            <section>
-                <h2>Technical Skills</h2>
-                <div class="skills-grid">
-                    <div><strong>Back-End:</strong> Node.js, Express.js</div>
-                    <div><strong>Front-End:</strong> HTML, CSS, JS, React</div>
-                    <div><strong>Databases:</strong> MongoDB, MySQL</div>
-                    <div><strong>Tools:</strong> Git, GitHub, REST APIs</div>
-                </div>
-            </section>
-
-            <section>
-                <h2>Work Experience</h2>
-                <div class="job">
-                    <div class="job-header">
-                        <strong>Junior Full Stack Developer</strong>
-                        <span>2025 - Present</span>
+            
+            <section class="dropdown-section">
+                <details>
+                    <summary><h2>Technical Skills</h2></summary>
+                    <div class="content-box skills-grid">
+                        <div><strong>Back-End:</strong> Java, SpringBoot</div>
+                        <div><strong>Front-End:</strong> HTML, CSS, JS</div>
+                        <div><strong>Databases:</strong> MongoDB, MySQL</div>
+                        <div><strong>Tools:</strong> Git, GitHub, REST APIs</div>
                     </div>
-                    <p class="company">ABC Tech Solutions, Johannesburg</p>
-                    <ul>
-                        <li>Developed and maintained web applications using React and Node.js.</li>
-                        <li>Built RESTful APIs for seamless front-end and back-end communication.</li>
-                        <li>Fixed bugs and improved application performance.</li>
-                    </ul>
-                </div>
+                </details>
             </section>
 
-            <section>
-                <h2>Education</h2>
-                <p><strong>Diploma in Information Technology</strong><br>Shaper</p>
+            <!-- Dropdown Section: Experience -->
+            <section class="dropdown-section">
+                <details open> 
+                    <summary><h2>Work Experience</h2></summary>
+                    <div class="content-box job">
+                        <div class="job-header">
+                            <strong>Junior Full Stack Developer</strong>
+                            <span class="date">2025 - Present</span>
+                        </div>
+                        <p class="company">Shaper, Johannesburg</p>
+                        <ul>
+                            <li>Developed and maintained web applications using React and Node.js.</li>
+                            <li>Built RESTful APIs for seamless front-end and back-end communication.</li>
+                            <li>Fixed bugs and improved application performance.</li>
+                        </ul>
+                    </div>
+                </details>
             </section>
 
-            <section>
-                <h2>References</h2>
-                <p>Available on Request</p>
-        
+            
+            <section class="dropdown-section">
+                <details>
+                    <summary><h2>Education</h2></summary>
+                    <div class="content-box">
+                        <p><strong>Diploma (NQF Level 6) in Software Engineering</strong><br>Shaper</p>
+                    </div>
+                </details>
+            </section>
+
+            <section class="dropdown-section">
+                <details>
+                    <summary><h2>References</h2></summary>
+                    <div class="content-box">
+                        <p>Available on Request</p>
+                    </div>
+                </details>
             </section>
         </main>
     </div>
